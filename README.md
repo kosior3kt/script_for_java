@@ -1,7 +1,7 @@
 ## What is this thing?
 this is very simple script for unshittifying Java (v hard task). 
 It copiles everything that contains .java recursively from place of 
-execution and then moves results to places specified in "package <someBullShit>;"
+execution and then moves results to places specified in "package \<someBullShit.god_why\>;"
 
 if folders are nowhere to be found it creates them.
 
