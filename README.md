@@ -14,3 +14,5 @@ After that you can clean it up with ./clean.sh
 if you want to test if it's running you can run ./build.sh -r
 this will build and run main executable.
 
+## Disclaimer
+It comes with ABSOLUTLEY NO GUARANTEE. Use it only if you are brave
