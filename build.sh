@@ -15,6 +15,9 @@ javac ${java_files}
 for file in ${java_files}
 do
 	where_to_copy=$(awk ' /package/ {print $2}' $file)
+
+	where_to_copy=$(echo "${where_to_copy}" | head -1)
+
 	where_to_copy_processed=$(echo ${where_to_copy} | sed 's/\./\//g')
 	where_to_copy_processed=$(echo ${where_to_copy_processed} | sed 's/;//')
 
