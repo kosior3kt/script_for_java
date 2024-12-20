@@ -1,5 +1,13 @@
 #!/bin/bash
 
+cwd_files=$(ls | grep "java_root")
+
+[[ ${cwd_files} == "" ]] && echo "I haven't found file: java_root. 
+This is safety mechanism. This script will recursively 
+search for java files from current location. This can be messy if
+you invoke it in place that is not java project root.
+If you haven't read README, do so now." && exit 1;
+
 java_files=$(find . -iname \*.java)
 
 javac ${java_files}
